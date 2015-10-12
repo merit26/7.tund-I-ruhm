@@ -20,3 +20,12 @@
     }
 
 ?>
+<!-- Salvestamiseks kasutan table.php rida 15, updateCar() -->
+<form action="table.php" method="get" >
+    <input name="car_id" type="hidden" value="<?=$_GET["edit_id"];?>">
+    <input name="number_plate" type="text" value="<?=$car->number_plate;?>" ><br>
+    <input name="color" type="text" value="<?=$car->color;?>"><br>
+    <input name="update" type="submit" >
+</form>
+
+
