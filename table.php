@@ -30,6 +30,7 @@
     <th>värv</th>
     <th></th>
     <th></th>
+    <th></th>
 </tr>
 <?php 
     
@@ -59,6 +60,7 @@
             echo "<td>".$car_array[$i]->color."</td>";
             echo "<td><a href='?delete=".$car_array[$i]->id."'>X</a></td>";
             echo "<td><a href='?edit=".$car_array[$i]->id."'>edit</a></td>";
+            echo "<td><a href='edit.php?edit_id=".$car_array[$i]->id."'>edit.php</a></td>";
             echo "</tr>";
             
         }
